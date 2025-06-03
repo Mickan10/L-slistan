@@ -19,6 +19,8 @@ test.describe('Användaren kan välja i flikmenyn', () => {
     await catalogBtn.click();
     await expect(catalogBtn).toBeDisabled(); 
     await expect(page.getByText('Välkommen!')).toBeVisible();
+
   });
+  
 });
 

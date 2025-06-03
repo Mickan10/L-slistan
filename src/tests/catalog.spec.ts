@@ -10,12 +10,12 @@ test.describe('Favoritmarkera bok i katalogfliken', () => {
 
     const heart = page.getByTestId(`star-${bookTitle}`);
 
-    //favoritmarkera bok
     await heart.click();
     await expect(heart).toHaveClass(/selected/);
 
-    //avmarkera bok
     await heart.click();
     await expect(heart).not.toHaveClass(/selected/);
+
   });
+  
 });
